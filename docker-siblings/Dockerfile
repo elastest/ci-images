@@ -78,6 +78,10 @@ RUN  curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle
 ## git 
 RUN apt-get -y install git
 
+
+## netcat
+RUN apt-get -y install netcat
+
 #non root user
 RUN useradd -ms /bin/bash jenkins &&\
     echo "jenkins:jenkins" | chpasswd
