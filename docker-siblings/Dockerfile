@@ -82,7 +82,7 @@ RUN apt-get -y install git
 RUN apt-get -y install netcat
 
 ## gpg2
-RUN apt-get -y install gpg2
+RUN apt-get -y install gnupg2
 
 #non root user
 RUN useradd -ms /bin/bash jenkins &&\
