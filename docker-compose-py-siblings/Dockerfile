@@ -12,6 +12,8 @@ RUN add-apt-repository ppa:jonathonf/python-3.6 \
     && update-alternatives --install /usr/bin/python python /usr/bin/python3.6 10 \
     && pip install --upgrade pip flask_testing coverage nose pluggy py randomize tox
 
+RUN pip install pyyaml
+
 ENV WORKSPACE /home/jenkins
 
 USER jenkins 
