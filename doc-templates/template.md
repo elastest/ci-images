@@ -35,11 +35,8 @@ elastest/\<image\>
 -	**Maintained by**:  
 	[the ElasTest community](https://github.com/elastest)
 
--	**Published image artifact details**:  
-	- [repo-info repo's `elastest/\<image\>` directory](https://github.com/elastest/<component>/blob/master/) 
-	([history](https://github.com/elastest/<component>/commits/master/>))  
-	
-	(image metadata, transfer size, etc)
+-	**Published image artifact details**:
+	(image metadata, transfer size, etc).
 
 -	**Source of this description**:  
 	[docs repo's `template/` directory](https://github.com/elastest/ci-images/edit/master/doc-templates/template.md) ([history](https://github.com/elastest/ci-images/commits/master/doc-templates))
