@@ -38,6 +38,7 @@ RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key
     google-chrome-stable \
   && rm /etc/apt/sources.list.d/google-chrome.list
 COPY wrap_chrome_binary /opt/bin/wrap_chrome_binary
+RUN chmod +x /opt/bin/wrap_chrome_binary
 RUN /opt/bin/wrap_chrome_binary
 
 # Firefox
