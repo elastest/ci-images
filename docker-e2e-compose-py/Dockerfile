@@ -2,7 +2,7 @@ FROM elastest/ci-docker-e2e-compose:latest
 
 LABEL maintainer "elastest-users@googlegroups.com"
 LABEL version="0.1.0"
-LABEL description="Builds a docker-in-docker image that includes python 3.6 & test requirements."
+LABEL description="Builds a docker-in-docker e2e image that includes python 3.6 & test requirements."
 
 USER root
 

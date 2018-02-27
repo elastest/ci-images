@@ -6,6 +6,15 @@ LABEL description="Builds a docker-in-docker image that includes python 3.6 & te
 
 USER root
 
+RUN apt-get install -y \
+    less \
+    man \
+    python \
+    python-pip \
+    python-virtualenv \
+    unzip \
+    vim
+
 RUN add-apt-repository ppa:jonathonf/python-3.6 \
     && apt-get update \
     && apt-get install -y python3.6 python3-pip python3.6-dev build-essential libbz2-dev libssl-dev libreadline-dev libsqlite3-dev tk-dev libevent-dev \
