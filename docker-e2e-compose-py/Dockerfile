@@ -28,4 +28,4 @@ USER jenkins
 WORKDIR ${WORKSPACE}
 
 # launch container
-ENTRYPOINT ["/bin/bash"]
+CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
