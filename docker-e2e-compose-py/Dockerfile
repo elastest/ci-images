@@ -22,6 +22,11 @@ RUN add-apt-repository ppa:jonathonf/python-3.6 \
     && pip install --upgrade pip flask_testing coverage nose pluggy py randomize tox tox-docker pyyaml \
     && pip install selenium
 
+RUN wget https://chromedriver.storage.googleapis.com/2.36/chromedriver_linux64.zip \
+    && unzip chromedriver_linux64.zip \
+    && mv chromedriver /usr/local/bin/
+
+
 ENV WORKSPACE /home/jenkins
 
 USER jenkins 
