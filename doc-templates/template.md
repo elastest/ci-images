@@ -3,15 +3,17 @@
 ELASTEST - Template for Docker Images README
    
 ************************************************************************ -->
-<!-- labels -->
+<!-- badges -->
 
+[![License badge](https://img.shields.io/badge/license-Apache2-orange.svg)](http://www.apache.org/licenses/LICENSE-2.0)
+[![Docker badge](https://img.shields.io/docker/pulls/elastest/etm.svg)](https://hub.docker.com/r/elastests/etm/)
 
-<!- Elastest logo ->
+<!-- Elastest logo -->
 [![][ElasTest Logo]][ElasTest]
 
 Copyright © 2017-2019 [ElasTest]. Licensed under [Apache 2.0 License].
 
-elastest-torm
+elastest/\<image\>
 ==============================
 
 # What is this? (TITLE of the image and short description)
@@ -28,20 +30,16 @@ elastest-torm
 	[the ElastTest mailing list](), [the Elastest Slack](), or [Stack Overflow]()
 
 -	**Where to file issues**:  
-	[--]()
+	Issues and bug reports should be posted to the [GitHub ElasTest Bugtracker].
 
 -	**Maintained by**:  
 	[the ElasTest community](https://github.com/elastest)
 
--	**Published image artifact details**:  
-	[repo-info repo's `elastest/environments` directory](https://github.com/elastest/environments/blob/master/<image-name>) ([history](https://github.com/elastest/environments/commits/master/<image-name>))  
-	(image metadata, transfer size, etc)
-
--	**Image updates**:  
-	[official-images PRs with label `elastest/env-<image-name>`](https://github.com/docker-library/official-images/pulls?q=label%3Alibrary%2Fmysql)  
+-	**Published image artifact details**:
+	(image metadata, transfer size, etc).
 
 -	**Source of this description**:  
-	[docs repo's `mysql/` directory](https://github.com/docker-library/docs/tree/master/mysql) ([history](https://github.com/docker-library/docs/commits/master/mysql))
+	[docs repo's `template/` directory](https://github.com/elastest/ci-images/edit/master/doc-templates/template.md) ([history](https://github.com/elastest/ci-images/commits/master/doc-templates))
 
 -	**Supported Docker versions**:  
 	[the latest release](https://github.com/docker/docker/releases/latest) (down to 17.03.1 on a best-effort basis)
@@ -60,3 +58,4 @@ elastest-torm
 [ElasTest Logo]: http://elastest.io/images/logos_elastest/elastest-logo-gray-small.png
 [ElasTest Twitter]: https://twitter.com/elastestio
 [GitHub ElasTest Group]: https://github.com/elastest
+[GitHub ElasTest Bugtracker]: https://github.com/elastest/bugtracker
