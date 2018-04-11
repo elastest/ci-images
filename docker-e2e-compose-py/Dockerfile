@@ -27,6 +27,11 @@ RUN wget https://chromedriver.storage.googleapis.com/2.36/chromedriver_linux64.z
     && mv chromedriver /usr/local/bin/
 
 
+RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.20.1/geckodriver-v0.20.1-linux64.tar.gz \
+    && tar -xvzf geckodriver-v0.20.1-linux64.tar.gz \
+    && mv geckodriver /usr/local/bin/
+
+
 ENV WORKSPACE /home/jenkins
 
 USER jenkins 
