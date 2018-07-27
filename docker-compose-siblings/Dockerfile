@@ -38,4 +38,4 @@ USER jenkins
 WORKDIR ${WORKSPACE} 
 
 # launch container
-ENTRYPOINT ["/bin/bash"]
+#ENTRYPOINT ["/bin/bash"]
