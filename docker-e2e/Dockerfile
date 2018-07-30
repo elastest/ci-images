@@ -52,7 +52,7 @@ RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys AF316E81A155146718A
 RUN add-apt-repository \
     "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 RUN apt-get update && \
-    apt-get install -y docker-ce=17.06.0~ce-0~ubuntu
+    apt-get install -y docker-ce=18.06.0~ce~3-0~ubuntu
 RUN echo "export DOCKER_HOST='unix:///var/run/docker.sock'" >> /root/.bashrc \
  && echo "export DEBIAN_FRONTEND=noninteractive" >> /root/.bashrc
 
