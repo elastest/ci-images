@@ -25,7 +25,7 @@ RUN apt-get update && \
 RUN sudo apt-get install openjdk-8-jdk
 
    # Define commonly used JAVA_HOME variable
-ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
+ENV JAVA_HOME /usr/lib/jvm/open-jdk
 
 ## maven
 RUN wget http://mirrors.viethosting.vn/apache/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz && \ 
