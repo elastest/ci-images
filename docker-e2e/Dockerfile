@@ -17,11 +17,9 @@ COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 VOLUME /var/log/supervisord
 
 # Java
-RUN echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections && \
-    apt-get install -y oracle-java8-installer && \
-    rm -rf /var/lib/apt/lists/* && \
-    rm -rf /var/cache/oracle-jdk8-installer
-ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
+RUN sudo apt-get install openjdk-8-jdk
+# Define commonly used JAVA_HOME variable
+ENV JAVA_HOME /usr/lib/jvm/open-jdk
 
 # Maven
 RUN wget http://mirrors.viethosting.vn/apache/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz && \ 
@@ -52,7 +50,7 @@ RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys AF316E81A155146718A
 RUN add-apt-repository \
     "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 RUN apt-get update && \
-    apt-get install -y docker-ce=18.06.0~ce~3-0~ubuntu
+    apt-get install -y docker-ce=18.06.1~ce~3-0~ubuntu
 RUN echo "export DOCKER_HOST='unix:///var/run/docker.sock'" >> /root/.bashrc \
  && echo "export DEBIAN_FRONTEND=noninteractive" >> /root/.bashrc
 
