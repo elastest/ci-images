@@ -16,7 +16,7 @@ MAINTAINER Guiomar Tuñon <gtunon@naevatec.com>
 USER root 
 
 ## Install DOCKER-COMPOSE 
-RUN curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+RUN curl -L https://github.com/docker/compose/releases/download/1.23.2/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
 RUN chmod +x /usr/local/bin/docker-compose
  
 ## Install Node
