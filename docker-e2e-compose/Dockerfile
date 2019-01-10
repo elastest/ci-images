@@ -52,12 +52,12 @@ RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys AF316E81A155146718A
 RUN add-apt-repository \
     "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 RUN apt-get update && \
-    apt-get install -y docker-ce=17.06.1~ce-0~ubuntu
+    apt-get install -y docker-ce=5:18.09.1~3-0~ubuntu-xenial
 RUN echo "export DOCKER_HOST='unix:///var/run/docker.sock'" >> /root/.bashrc \
  && echo "export DEBIAN_FRONTEND=noninteractive" >> /root/.bashrc
 
 ## Install DOCKER-COMPOSE 
-RUN curl -L https://github.com/docker/compose/releases/download/1.14.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+RUN curl -L https://github.com/docker/compose/releases/download/1.23.2/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
 RUN chmod +x /usr/local/bin/docker-compose
 
 # Cleanup
