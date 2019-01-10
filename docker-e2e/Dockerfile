@@ -18,7 +18,7 @@ VOLUME /var/log/supervisord
 
 # Java
 RUN add-apt-repository ppa:openjdk-r/ppa
-RUN apt-get update && apt-get install openjdk-8-jdk
+RUN apt-get update && apt-get install -y openjdk-8-jdk
 # Define commonly used JAVA_HOME variable
 ENV JAVA_HOME /usr/lib/jvm/open-jdk
 
