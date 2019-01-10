@@ -19,7 +19,7 @@ VOLUME /var/log/supervisord
 RUN add-apt-repository ppa:openjdk-r/ppa
 RUN apt-get update && apt-get install -y openjdk-8-jdk
 # Define commonly used JAVA_HOME variable
-ENV JAVA_HOME /usr/lib/jvm/open-jdk
+ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
 
 # Maven
 RUN wget http://mirrors.viethosting.vn/apache/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz && \ 
