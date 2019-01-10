@@ -3,7 +3,7 @@ USER root
 
 # Setup
 RUN apt-get update && \
-    apt-get install -y  software-properties-common && \
+    apt-get install -y  software-properties-common\ 
     curl wget apt-transport-https build-essential git
     
 RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
