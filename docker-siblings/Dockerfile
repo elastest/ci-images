@@ -15,16 +15,15 @@ USER root
 # prepare environment
 RUN apt-get update && \
     apt-get install -y  software-properties-common && \
-    add-apt-repository ppa:webupd8team/java 
+    add-apt-repository ppa:openjdk-r/ppa 
     
 RUN apt-get update && \ 
     apt-get upgrade -y && \
     apt-get install -y curl wget apt-transport-https
 
-## java 
-RUN apt-get install openjdk-8-jdk
-
-   # Define commonly used JAVA_HOME variable
+# Java
+RUN apt-get install -y openjdk-8-jdk
+# Define commonly used JAVA_HOME variable
 ENV JAVA_HOME /usr/lib/jvm/open-jdk
 
 ## maven
