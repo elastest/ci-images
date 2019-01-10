@@ -22,7 +22,7 @@ RUN apt-get update && \
     apt-get install -y curl wget apt-transport-https
 
 ## java 
-RUN sudo apt-get install openjdk-8-jdk
+RUN apt-get install openjdk-8-jdk
 
    # Define commonly used JAVA_HOME variable
 ENV JAVA_HOME /usr/lib/jvm/open-jdk
