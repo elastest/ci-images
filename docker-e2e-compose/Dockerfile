@@ -4,9 +4,8 @@ USER root
 # Setup
 RUN apt-get update && \
     apt-get install -y  software-properties-common && \
-RUN apt-get update && \
-    apt-get upgrade -y && \
-    apt-get install -y curl wget apt-transport-https build-essential git
+    curl wget apt-transport-https build-essential git
+    
 RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
 
 # Xvfb
