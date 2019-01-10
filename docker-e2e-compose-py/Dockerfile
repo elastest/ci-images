@@ -6,7 +6,7 @@ LABEL description="Builds a docker-in-docker e2e image that includes python 3.6 
 
 USER root
 
-RUN apt-get install -y \
+RUN apt-get update && apt-get install -y \
     less \
     man \
     python \
