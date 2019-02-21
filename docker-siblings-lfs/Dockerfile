@@ -7,7 +7,7 @@
 
 FROM ubuntu:16.04
 
-LABEL maintainer="gtunon@naevatec.com"
+LABEL maintainer="1karcio@gmail.com"
 
 # user for setting the environment
 USER root 
