@@ -74,6 +74,10 @@ RUN  curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle
 ## git 
 RUN apt-get -y install git
 
+## git 
+RUN curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash
+RUN apt-get -y install git-lfs
+
 ## Git Large File Storage (LFS) support
 RUN git lfs install
 
