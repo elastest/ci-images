@@ -44,7 +44,8 @@ This image provides an environment with the following tools installed:
 - docker-ce (latest stable)
 - AWS cli 
 - Git Large File Storage (LFS) support
-git lfs install
+- python 3 
+- python 3 pip
 
 
 # How to use this image
