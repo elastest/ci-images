@@ -21,6 +21,11 @@ RUN apt-get -y install git
 RUN curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash
 RUN apt-get -y install git-lfs
 
+## install python 3 and pip3
+RUN apt-get install -y python3
+RUN apt-get install -y python3-pip
+
+
 ## Git Large File Storage (LFS) support
 RUN git lfs install
 
