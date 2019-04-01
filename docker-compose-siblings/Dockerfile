@@ -25,7 +25,7 @@ RUN apt-get install -y nodejs
 RUN npm install node-sass
 
 ## Install angular-cli
-RUN npm install -g @angular/cli --unsafe && npm cache clean --force
+RUN npm install -g @angular/cli --unsafe @angular-devkit/build-angular && npm cache clean --force
 
 ## git 
 RUN apt-get -y install git
